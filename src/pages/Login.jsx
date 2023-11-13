@@ -30,7 +30,8 @@ export default function Login() {
 
   return (
     <Container className="my-5">
-      <h1>Login Your Account</h1>
+      <h1 className="my-5">Login Your Account</h1>
+      <div className="m-auto">
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
@@ -62,6 +63,7 @@ export default function Login() {
           Login
         </Button>
       </Form>
+      </div>
     </Container>
   );
 }
