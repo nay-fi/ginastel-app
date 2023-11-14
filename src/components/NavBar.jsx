@@ -13,13 +13,14 @@ export default function NavBar() {
   }
 
   return (
-    <Navbar expand="md" className="bg-light">
-      <Navbar.Brand href="/">Zeph&apos;s Login App</Navbar.Brand>
+    <Navbar expand="lg" className="bg-light">
+      <Navbar.Brand href="/">Ginastel App</Navbar.Brand>
       <Navbar.Toggle aria-controls="login-app" />
       <Navbar.Collapse id="login-app">
         <Nav className="ms-auto">
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/dashboard">Dashboard</Nav.Link>
+          <Nav.Link href="/minuman">Minuman</Nav.Link>
+          <Nav.Link href="/makanan">Makanan</Nav.Link>
+          {/* <Nav.Link href="/dashboard">Home</Nav.Link> */}
           <Nav.Link href="/profile">Profile</Nav.Link>
           <Button className="ms-5" variant="danger" onClick={logout}>
             Logout
