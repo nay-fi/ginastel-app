@@ -6,7 +6,7 @@
       "nim" : 21120120120033,
       "username": "kiri",
       "password": "kanan",
-      "image" : "https://github.com/nay-fi/usercontent"
+      "image" : "https://avatars.githubusercontent.com/kiranija"
     },
     {
       "id" : 2,
@@ -15,7 +15,7 @@
       "nim" : 21120120130053,
       "username": "ayuksaja",
       "password": "rawrrawr",
-      "image" : "https://github.com/nay-fi/usercontent"
+      "image" : "https://avatars.githubusercontent.com/nay-fi"
     },
   {
     "id" : 3,
@@ -24,7 +24,7 @@
     "nim" : 21120120130113,
     "username": "sadhewos",
     "password": "inipassword",
-    "image" : "https://github.com/nay-fi/usercontent"
+    "image" : "https://avatars.githubusercontent.com/YogaSadhewoS"
   },
   {
     "id" : 4,
@@ -33,6 +33,6 @@
     "nim" : 21120120140103,
     "username": "chichi",
     "password": "ccc",
-    "image" : "https://github.com/nay-fi/usercontent"
+    "image" : "https://avatars.githubusercontent.com/SachikoFitriaRamadanti"
   }
   ]
