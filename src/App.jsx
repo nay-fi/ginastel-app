@@ -22,39 +22,39 @@ export default function App() {
   const [modalItem, setModalItem] = useState(null);
 
 
-  useEffect(() => {
-    const fetchData = async (query) => {
-    setIsLoading(true);
-    try {
-        const response = await axios.get(
-            "https://the-cocktail-db.p.rapidapi.com/search.php",{
-            params: { q: query },
-            headers: {
-                "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-                "x-rapidapi-key": "8bc19e9184msh7d8b41a7fa7b3acp1d0cdajsnb85c7739879c",
-            },
-            }
-        );
-        if (response.status === 200) {
-            setData(response.data);
-            setisLoaded(true);
-            setIsLoading(false);
-        }
-    } catch (err) {
-    console.log(err);
-    setIsLoading(false);
-    }
-    };
-if (!isLoaded) {
-fetchData(query);
-}
-}, [isLoaded, query]);
-    // const onSearch = (e) => {
-    // if (e.key === "Enter") {
-    // setisLoaded(false);
-    // setQuery(e.target.value);
+//   useEffect(() => {
+//     const fetchData = async (query) => {
+//     setIsLoading(true);
+//     try {
+//         const response = await axios.get(
+//             "https://the-cocktail-db.p.rapidapi.com/search.php",{
+//             params: { q: query },
+//             headers: {
+//                 "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
+//                 "x-rapidapi-key": "8bc19e9184msh7d8b41a7fa7b3acp1d0cdajsnb85c7739879c",
+//             },
+//             }
+//         );
+//         if (response.status === 200) {
+//             setData(response.data);
+//             setisLoaded(true);
+//             setIsLoading(false);
+//         }
+//     } catch (err) {
+//     console.log(err);
+//     setIsLoading(false);
+//     }
+//     };
+// if (!isLoaded) {
+// fetchData(query);
+// }
+// }, [isLoaded, query]);
+//     // const onSearch = (e) => {
+//     // if (e.key === "Enter") {
+//     // setisLoaded(false);
+//     // setQuery(e.target.value);
 
-// };
+// // };
 const handleClick = (item) => {
     setModalShow(!modalShow);
     setModalItem(item);

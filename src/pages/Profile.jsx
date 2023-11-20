@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Container } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import Image from "react-bootstrap";
 import NavBar from "../components/Navbar";
 import userData from "../users.json";
 
 
 const BASE_API_URL = `https://dummyjson.com/docs`; 
 
-export default function Dashboard(props) {
+export default function Profile() {
   const [user, setUser] = useState([]); 
   const [page, setPage] = useState(0)
   const [newUser, setNewUser] = useState([]); 
@@ -50,18 +51,26 @@ export default function Dashboard(props) {
       <NavBar />
       <h1 className="my-5">Profile</h1>
       {userData.map((data) => (
+        
+          // <Image src="({data.image})" rounded />
 
-        <Card>
+        <Card className="back">
+          <Card.Image>
+            <Image>{data.image}</Image>
+            </Card.Image>
         <Card.Body>
           <Card.Title>{data.name}</Card.Title>
+          {/* NIM */}
           <Card.Text>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>{data.nim}</p>
           </Card.Text>
+          {/* Email */}
           <Card.Text>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              fuga.
-            </p>
+            <p>{data.email}</p>
+          </Card.Text>
+          {/* username */}
+          <Card.Text>
+            <p>{data.username}</p>
           </Card.Text>
         </Card.Body>
       </Card>
