@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "Klepon",
+      "description": "Kue tradisional Jawa berisi kelapa parut gula merah.",
+      "image": "/klepon.jpg",
+      "detail": "Klepon adalah kelezatan tradisional Jawa yang memikat dengan tekstur unik dan rasa autentiknya. Dibalut oleh lapisan ketan yang kenyal, setiap gigitan memperkenalkan Anda pada kombinasi lembut ketan dengan manis gula kelapa merah yang meleleh di dalamnya. Klepon sering dianggap sebagai simbol perayaan dan kebersamaan dalam budaya Jawa. Disajikan bersama Teh Ginastel, kehangatan teh memberikan sentuhan yang sempurna untuk menemani kelezatan klepon, menciptakan harmoni cita rasa yang membuat pengalaman menyantapnya semakin istimewa."
+    },
+    {
+      "id": 2,
+      "name": "Onde-Onde",
+      "description": "Kue bulat berisi kacang hijau yang digoreng.",
+      "image": "/onde-onde.jpeg",
+      "detail": "Onde-Onde adalah camilan klasik Indonesia yang memukau dengan cita rasa yang kaya dan tekstur yang memikat. Kulit luar onde-onde, yang renyah karena digoreng, memapankan rahasia lezat di dalamnya—kacang hijau yang manis dan lembut. Onde-onde sering dihidangkan sebagai teman akrab dalam berbagai momen, mulai dari perayaan hingga pertemuan santai. Pengalaman menggigit onde-onde yang gurih diikuti oleh kelezatan kacang hijau menjadikannya pilihan camilan yang tak terlupakan. Saat dinikmati bersama Teh Ginastel, sensasi rasa yang terasa semakin lengkap, memberikan kepuasan untuk lidah yang mencari kelezatan sejati."
+    },
+    {
+      "id": 3,
+      "name": "Pisang Goreng",
+      "description": "Pisang yang digoreng dengan tepung, crispy di luar dan lembut di dalam.",
+      "image": "/pisang-goreng.jpg",
+      "detail": "Pisang Goreng, hidangan yang akrab di seluruh Indonesia, memikat dengan kelezatan sederhana namun memuaskan. Potongan pisang yang dibalut oleh lapisan tepung renyah dan digoreng hingga keemasan menciptakan kombinasi sempurna antara kerenyahan luar dan kelembutan pisang di dalamnya. Pisang Goreng sering menjadi camilan populer untuk dinikmati sebagai teman teh pada sore hari atau sebagai sajian ringan dalam acara bersama keluarga. Disajikan bersama Teh Ginastel, kehangatan teh melengkapi kelezatan Pisang Goreng, menciptakan pengalaman santap yang menggugah selera."
+    },
+    {
+      "id": 4,
+      "name": "Tempe Mendoan",
+      "description": "Tempe tipis yang dibalut tepung dan digoreng hingga renyah.",
+      "image": "/tempe.jpg",
+      "detail": "Tempe Mendoan, hidangan khas Jawa Tengah, menawarkan kelezatan unik dengan cita rasa gurih dan tekstur yang renyah. Lembaran tempe yang tipis dibalut oleh adonan tepung berbumbu, lalu digoreng hingga garing. Keunikan Tempe Mendoan terletak pada rasa gurih tempe yang terjaga di setiap gigitan. Hidangan ini sering dihidangkan sebagai camilan favorit saat bersantai atau sebagai hidangan pendamping nasi. Nikmati kelezatan Tempe Mendoan bersama Teh Ginastel untuk merasakan perpaduan rasa yang memuaskan dan segar."
+    },
+    {
+      "id": 5,
+      "name": "Tahu Isi",
+      "description": "Tahu yang diisi dengan campuran sayuran dan daging, lalu digoreng.",
+      "image": "/tahu.jpg",
+      "detail": "Tahu Isi, hidangan yang terkenal dengan kelezatan isian sayuran dan daging di dalam tahu, memukau dengan tekstur lembut dan cita rasa yang lezat. Setiap potongan tahu yang digoreng hingga keemasan membuka rahasia kelezatan isian yang berlimpah. Tahu Isi sering dihidangkan sebagai camilan yang memuaskan selera, baik sebagai pendamping teh atau sajian ringan dalam acara bersama keluarga. Bersama Teh Ginastel, Tahu Isi menjadi pilihan yang pas untuk merasakan keharmonisan cita rasa dan kesegaran yang menggoda."
+    },
+    {
+      "id": 6,
+      "name": "Nasi Liwet",
+      "description": "Nasi yang dimasak dengan santan dan rempah-rempah, disajikan dengan lauk.",
+      "image": "/nasi-liwet.jpg",
+      "detail": "Nasi Liwet, hidangan khas Jawa yang kaya rempah dan santan, menggugah selera dengan kelembutan dan kelezatan yang unik. Nasi yang dimasak dengan rempah-rempah dan santan kemudian disajikan dengan lauk-pauk yang melengkapi cita rasa. Hidangan ini sering dianggap sebagai sajian istimewa yang cocok dinikmati dalam acara-acara spesial atau perayaan. Disajikan bersama Teh Ginastel, Nasi Liwet memberikan pengalaman menyantap yang istimewa, di mana kelezatan nasi dan kehangatan teh saling melengkapi."
+    },
+    {
+      "id": 7,
+      "name": "Soto Solo",
+      "description": "Sup tradisional Jawa dengan nasi, daging, dan bumbu rempah.",
+      "image": "/soto-solo.jpg",
+      "detail": "Soto Solo, sup tradisional Jawa dengan rempah-rempah yang kaya, memukau dengan kehangatan dan kelezatan yang menggoda selera. Isiannya yang meliputi nasi, daging, dan bumbu rempah menciptakan hidangan berkuah yang begitu lezat. Soto Solo sering dihidangkan sebagai hidangan utama dalam acara keluarga atau sebagai hidangan penuh kenikmatan untuk menghangatkan badan. Bersama Teh Ginastel, sensasi hangat dari soto dan keharuman teh menciptakan pengalaman bersantap yang memuaskan."
+    },
+    {
+      "id": 8,
+      "name": "Tengkleng Kambing",
+      "description": "Gulai kambing dengan bumbu khas yang kental dan lezat.",
+      "image": "/tengkleng-kambing.jpg",
+      "detail": "Tengkleng Kambing, gulai kambing dengan bumbu kental dan lezat, menawarkan hidangan yang memanjakan lidah. Daging kambing yang empuk dan bumbu rempah yang meresap menciptakan rasa yang kaya dan gurih. Hidangan ini sering dihadirkan pada acara-acara spesial atau saat bersantai bersama teman-teman. Disantap bersama Teh Ginastel, Tengkleng Kambing menghadirkan pengalaman menyantap yang luar biasa, di mana kehangatan teh dan kelezatan gulai saling melengkapi."
+    },
+    {
+      "id": 9,
+      "name": "Kue Lapis",
+      "description": "Kue tradisional berlapis-lapis dengan warna yang menarik.",
+      "image": "/kue-lapis.jpeg",
+      "detail": "Kue Lapis, kue tradisional berlapis-lapis dengan warna yang menarik, memukau dengan keunikan tampilan dan cita rasa yang lezat. Setiap lapisan kue yang terbuat dari bahan-bahan berkualitas tinggi menciptakan rasa yang beragam dan menggoda selera. Kue Lapis sering dihidangkan sebagai hidangan penutup istimewa atau sebagai oleh-oleh yang disukai banyak orang. Bersama Teh Ginastel, Kue Lapis menjadi pilihan yang sempurna untuk menutup hidangan dengan manis dan mengakhiri santapan dengan kehangatan teh yang menenangkan."
+    }
+  ]
+  

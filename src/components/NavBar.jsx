@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
     <Navbar expand="lg" className="bg-light">
-      <Navbar.Brand href="/">Ginastel App</Navbar.Brand>
+      <Navbar.Brand href="/dashboard">Ginastel App</Navbar.Brand>
       <Navbar.Toggle aria-controls="login-app" />
       <Navbar.Collapse id="login-app">
         <Nav className="ms-auto">
