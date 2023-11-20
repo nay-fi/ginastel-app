@@ -4,9 +4,11 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
+import userData from "../users.json";
 
 export default function Login() {
   const [email, setEmail] = useState([]);
+  const [username, setUsername] = useState([]);
   const [password, setPassword] = useState([]);
 
   //   ------onClick={displayUser}-------
@@ -17,62 +19,21 @@ export default function Login() {
 
   const navigate = useNavigate();
   const authContext = useContext(AuthContext);
+  console.log(authContext)
 
-  const users = (
-    {
-      // id : '1',
-      name : 'Kirani Juli Andini',
-      email : 'juliakirani27@gmail.com',
-      nim : '21120120120033',
-      username: 'kiri',
-      password: 'kanan',
-      image : 'https://github.com/nay-fi/usercontent'
-    },
-    {
-      // id : '2',
-      name : 'Nur Ayuk Febreyanti',
-      email : 'ayuk@gmail.com',
-      nim : '21120120130053',
-      username: 'ayuksaja',
-      password: 'rawrrawr',
-      image : 'https://github.com/nay-fi/usercontent',
-    },
-  {
-    // id : '3',
-    name : 'Kirani Juli',
-    email : 'xahacker.alfa@gmail.com',
-    nim : '21120120130113',
-    username: 'sadhewos',
-    password: 'inipassword',
-    image : 'https://github.com/nay-fi/usercontent'
-  },
-  {
-    // id : '4',
-    name : 'Sachiko Fitria Ramadhanti',
-    email : 'sachikofitria354@gmail.com',
-    nim : '21120120140103',
-    username: 'chichi',
-    password: 'ichich',
-    image : 'https://github.com/nay-fi/usercontent'
-  }
-  );
+  // const users = useContext(userData); //isiasi buat file json nya
 
   function login() {
-    const isCorrectUsername = email === (users.username);
-    const isCorrectPassword = password === (users.password);
+    console.log(userData)
+    const isCorrectUser = userData.filter((data) => data.email == email && data.password == password)
     
-    // (email === users.email ? true : (email === users.username ? true : false))
-// console.log(isCorrectPassword);
-// console.log(isCorrectUsername);
-
-    if (isCorrectUsername && isCorrectPassword) {
+console.log(isCorrectUser)
+    if (isCorrectUser.length !== 0 ) {
       authContext.setToken("1234");
       navigate("/dashboard");
+    } else {
+      alert("Silahkan Cek Kembali Email dan Paasword Anda")
     }
-    // else{
-    //   // authContext.setToken("3434");
-    //   navigate("/home");
-    // }
   }
 
   return (
@@ -82,9 +43,9 @@ export default function Login() {
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
-          <Form.Control
+          <Form.Control 
             type="email"
-            placeholder="zeph@zeph.com"
+            placeholder="Masukin email"
             value={email}
             onChangeCapture={(e) => {
               setEmail(e.target.value);
@@ -99,7 +60,7 @@ export default function Login() {
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
-            placeholder="zeph"
+            placeholder="Masukin Password"
             value={password}
             onChangeCapture={(e) => {
               setPassword(e.target.value);
