@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "name": "Tea Lychee",
+      "price": "2.0",
+      "image": "/tea-lychee.png",
+      "detail": "Tea Lychee adalah minuman teh yang dicampur dengan perisa leci."
+    },
+    {
+      "id": 2,
+      "name": "Tea Peach",
+      "price": "2.0",
+      "image": "/tea-peach.png",
+      "detail": "Tea Peach adalah minuman teh yang dicampur dengan perisa peach."
+    },
+    {
+      "id": 3,
+      "name": "Tea Lotus",
+      "price": "2.0",
+      "image": "/tea-lotus.png",
+      "detail": "Tea Lotus adalah teh yang telah dicampur oleh lotus."
+    },
+    {
+      "id": 4,
+      "name": "Ice Bac Xiu",
+      "price": "2.0",
+      "image": "/ice-bac-xiu.png",
+      "detail": "Ice Bac Xiu adalah kopi vietnam dengan banyak tambahan susu kental."
+    },
+    {
+      "id": 5,
+      "name": "Coffe Black",
+      "price": "2.0",
+      "image": "/coffe-black.png",
+      "detail": "Coffe Black adalah kopi hitam murni."
+    },
+    {
+      "id": 6,
+      "name": "Coffe Milk",
+      "price": "2.0",
+      "image": "/coffe-milk.png",
+      "detail": "Coffe Milk adalah kopi dengan campuran susu."
+    }
+  ]
+  
