@@ -10,6 +10,8 @@ import { AuthContext } from "./AuthContext";
 import RequireAuth from "./components/RequireAuth";
 import useLocalStorage from "use-local-storage";
 import Profile from "./pages/Profile";
+import Makanan from "./pages/Makanan";
+import DetailMakanan from "./pages/DetailMakanan";
 
 export default function App() {
   const [token, setToken] = useLocalStorage("token", null);
@@ -73,6 +75,22 @@ const handleClick = (item) => {
               </RequireAuth>
             }
             path="/dashboard"
+          />
+          <Route
+            element={
+              <RequireAuth>
+                <Makanan />
+              </RequireAuth>
+            }
+            path="/makanan"
+          />
+          <Route
+            element={
+              <RequireAuth>
+                <DetailMakanan />
+              </RequireAuth>
+            }
+            path="/detail/:id"
           />
           <Route
             element={
