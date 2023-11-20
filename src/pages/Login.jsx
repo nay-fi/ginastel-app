@@ -8,9 +8,9 @@ import userData from "../users.json";
 
 export default function Login() {
   const [email, setEmail] = useState([]);
-  const [username, setUsername] = useState([]);
   const [password, setPassword] = useState([]);
-
+  // const [username, setUsername] = useState([]);
+  
   //   ------onClick={displayUser}-------
   //   const displayUser = () => {
   //     console.log(email);
@@ -19,12 +19,12 @@ export default function Login() {
 
   const navigate = useNavigate();
   const authContext = useContext(AuthContext);
-  console.log(authContext)
+  // console.log(authContext)
 
   // const users = useContext(userData); //isiasi buat file json nya
 
   function login() {
-    console.log(userData)
+    // console.log(userData)
     const isCorrectUser = userData.filter((data) => data.email == email && data.password == password)
     
 console.log(isCorrectUser)

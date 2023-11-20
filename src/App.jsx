@@ -60,7 +60,6 @@ const handleClick = (item) => {
     setModalItem(item);
 }
 
-  
   return (
     <AuthContext.Provider value={{ token, setToken }}>
       <BrowserRouter>
