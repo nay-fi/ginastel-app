@@ -14,25 +14,6 @@ export default function Dashboard(props) {
   const [newUser, setNewUser] = useState([]); 
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
-  // useEffect(() => { 
-  //   async function getUser() { 
-  //   await axios 
-  //   .get(`${BASE_API_URL}/users`) 
-  //   .then((res) => { 
-  //   const responseData = res.users;
-  //   setPage(responseData.total)
-  //   setUser(responseData.users);
-    
-  //   console.log(page)
-  //   console.log(user); 
-  //   }) 
-  //   .catch((error) => { 
-  //   console.log(error); 
-  //   window.alert(error); 
-  //   }); 
-  //   } 
-  //   getUser(); 
-  // }, []); 
   const openDialog = () => { 
   setIsDialogOpen(true); 
   };
@@ -48,26 +29,21 @@ export default function Dashboard(props) {
     <>
     <Container className="text-center">
       <NavBar />
-      <h1 className="my-5">Profile</h1>
+      <h1 className="my-5">Profile Kelompok 13</h1>
       {userData.map((data) => (
 
         <Card>
-        <Card.Body>
+          <Card.Img className ="avatar-component" variant="top" src={data.image} />
+        <Card.Body>   
           <Card.Title>{data.name}</Card.Title>
-          <Card.Text>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </Card.Text>
-          <Card.Text>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-              fuga.
-            </p>
-          </Card.Text>
+          <Card.Text>Email : {data.email}</Card.Text>
+          <Card.Text>NIM : {data.nim}</Card.Text>
+          <Card.Text>Username : {data.username}</Card.Text>
+
         </Card.Body>
       </Card>
         ))}
     </Container>
     </>
-
   );
 }
