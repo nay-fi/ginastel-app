@@ -11,8 +11,8 @@ const Minuman = () => {
       <NavBar />
       <h1 className="my-4">Daftar Minuman</h1>
       <p>
-        Berikut adalah daftar makanan yang cocok untuk dihidangkan bersama
-        dengan Makanan Ginastel
+        Berikut adalah daftar minuman yang tersedia pada kedai Ginastel, 
+        sangat cocok disandingkan dengan menu makanan yang tersedia pada kedai Ginastel
       </p>
       <Row xs={1} md={3} className="g-4">
         {drinksData.map((drink) => (
