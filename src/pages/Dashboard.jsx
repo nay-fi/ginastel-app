@@ -1,6 +1,7 @@
 import { Button, Container, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import NavBar from "../components/Navbar";
+import Makanan from "./Makanan";
 
 export default function Dashboard() {
   const navigate = useNavigate();
@@ -10,14 +11,13 @@ export default function Dashboard() {
   }
 
   return (
-    <Container className="text-center">
+    <div className="text-center">
       <NavBar />
-      <h1 className="my-5">Ginastel</h1>
+      <Makanan />
+      {/* <h1 className="my-5">Ginastel App</h1> */}
       <Card>
         <Card.Body>
-          <Card.Title>Menu Minuman</Card.Title>
-          
-          {/* Card minuman */}
+          <Card.Title>Menu Makanan</Card.Title>
           <Card className="mt-5" variant="mt-5 my-4" style={{ width: '14rem' }}>
           <Card.Img variant="top" src="holder.js/100px180" />
           <Card.Body>
@@ -41,6 +41,6 @@ export default function Dashboard() {
       <Button className="mt-3" variant="warning" onClick={goProfile}>
         Go to Profile
       </Button>
-    </Container>
+    </div>
   );
 } 

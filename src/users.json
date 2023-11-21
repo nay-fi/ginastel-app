@@ -6,25 +6,25 @@
       "nim" : 21120120120033,
       "username": "kiri",
       "password": "kanan",
-      "image" : "https://avatars.githubusercontent.com/u/kiranija"
+      "image" : "https://avatars.githubusercontent.com/kiranija"
     },
     {
       "id" : 2,
       "name" : "Nur Ayuk Febreyanti",
-      "email" : "ayuk@gmail.com",
+      "email" : "nurayuk@gmail.com",
       "nim" : 21120120130053,
       "username": "ayuksaja",
       "password": "rawrrawr",
-      "image" : "https://avatars.githubusercontent.com/u/n-ayfi"
+      "image" : "https://avatars.githubusercontent.com/nay-fi"
     },
   {
     "id" : 3,
-    "name" : "Sadhewo Salahudin",
+    "name" : "Yoga Sadhewo Salahudin",
     "email" : "xahacker.alfa@gmail.com",
     "nim" : 21120120130113,
     "username": "sadhewos",
     "password": "inipassword",
-    "image" : "https://avatars.githubusercontent.com/u/SachikoFitriaRamadanti"
+    "image" : "https://avatars.githubusercontent.com/u/YogaSadhewoS"
   },
   {
     "id" : 4,
@@ -33,6 +33,6 @@
     "nim" : 21120120140103,
     "username": "chichi",
     "password": "ccc",
-    "image" : "https://avatars.githubusercontent.com/u/YogaSadhewoS"
+    "image" : "https://avatars.githubusercontent.com/SachikoFitriaRamadanti"
   }
   ]

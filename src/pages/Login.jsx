@@ -5,6 +5,7 @@ import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
 import userData from "../users.json";
+import RequireAuth from "../components/RequireAuth";
 
 export default function Login() {
   const [email, setEmail] = useState([]);
@@ -27,7 +28,7 @@ export default function Login() {
     // console.log(userData)
     const isCorrectUser = userData.filter((data) => data.email == email && data.password == password)
     
-console.log(isCorrectUser)
+// console.log(isCorrectUser)
     if (isCorrectUser.length !== 0 ) {
       authContext.setToken("1234");
       navigate("/dashboard");
@@ -49,7 +50,7 @@ console.log(isCorrectUser)
             value={email}
             onChangeCapture={(e) => {
               setEmail(e.target.value);
-            }}
+            }} required
           />
           <Form.Text className="text-muted">
             We&apos;ll never share your email with anyone else.
@@ -64,8 +65,8 @@ console.log(isCorrectUser)
             value={password}
             onChangeCapture={(e) => {
               setPassword(e.target.value);
-            }}
-          />
+            }} required
+          /> 
         </Form.Group>
         <Button variant="primary" onClick={login}>
           Login
