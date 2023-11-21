@@ -29,8 +29,8 @@ export default function App() {
             }
             path="/"
           />
-          <Route element={<Home />} path="/" />
           <Route element={<Login />} path="/login" />
+        <Route element={<Home />} path="/home" />
           <Route
             element={
               <RequireAuth>

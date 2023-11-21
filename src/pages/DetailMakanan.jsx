@@ -1,5 +1,4 @@
 // DetailMakanan.jsx
-import React from "react";
 import { useParams } from "react-router-dom";
 import foodsData from "../foods.json";
 import { Link } from "react-router-dom";
@@ -17,9 +16,9 @@ const DetailMakanan = () => {
   return (
     <>
       <NavBar />
-    <Container className="my-5 p-2">
-      <h2 className="text-center display-5 my-4">Apa itu {food.name} ?</h2>
-      <Card style={{ width: "24rem" }}>
+      <h2 className="my-4 p-2 text-center display-5 bg-light container-fluid">Apa itu <u>{food.name}</u> ?</h2>
+    <Container className="my-3 p-2 m-auto">
+      <Card className="m-auto m-3 w-75 align-baseline">
         <Link
           to={`/makanan`}
           style={{ textDecoration: "none", color: "inherit" }}
@@ -28,12 +27,13 @@ const DetailMakanan = () => {
             variant="top"
             src={food.image}
             alt={food.name}
-            style={{ height: "200px", objectFit: "cover" }}
+            className=""
+            style={{ height: '347px', objectFit: "cover" }}
           />
         </Link>
         <Card.Body>
-          <Card.Header className=" bg-transparent text-center h4 my-4">{food.name}</Card.Header>
-          <Card.Text className="h6 fw-normal">{food.detail}</Card.Text>
+          <Card.Header className="bg-transparent text-center h4 my-4">{food.name}</Card.Header>
+          <Card.Text className="m-1 p-3 h5 fw-light">{food.detail}</Card.Text>
         </Card.Body>
       </Card>
     </Container>

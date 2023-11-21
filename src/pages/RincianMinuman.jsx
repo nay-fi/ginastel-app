@@ -1,5 +1,4 @@
 // RincianMinuman.jsx
-import React from "react";
 import { useParams } from "react-router-dom";
 import drinksData from "../drinks.json";
 import { Link } from "react-router-dom";
@@ -15,27 +14,29 @@ const RincianMinuman = () => {
   }
 
   return (
-    <Container>
+    <>
       <NavBar />
-      <h1 className="my-4">Detail Minuman {drink.name}</h1>
-      <Card className="m-3 p-1" >
+      <h1 className="my-4 p-2 text-center display-5 bg-light container-fluid">Apa itu <u>{drink.name}</u> ?</h1>
+    <Container>
+      <Card className="m-auto m-3 p-1 w-75" >
         <Link
+          className="text-center"
           to={`/minuman`}
-          style={{ textDecoration: "none", color: "inherit" }}
         >
           <Card.Img
-            className="w-50"
+            className="m-auto w-50"
             variant="top"
             src={drink.image}
             alt={drink.name}
           />
         </Link>
         <Card.Body>
-          <Card.Title>{drink.name}</Card.Title>
-          <Card.Text>{drink.rincian}</Card.Text>
+          <Card.Title className="text-center">{drink.name}</Card.Title>
+          <Card.Text className="text-center">{drink.rincian}</Card.Text>
         </Card.Body>
       </Card>
     </Container>
+    </>
   );
 };
 

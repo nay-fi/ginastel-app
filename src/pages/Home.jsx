@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <>
-    <Container className="my-5 text-center">
+    <Container className="my-5 mt-5 p-5 text-center bg-light rounded-2">
       <img src={Ginastel} className="rounded-2"/>
       <h1 className="mt-3">Welcome in <u>GiNaSTel</u> App</h1>
       <h5 className="mt-5 fw-light">please login to see menu</h5>
