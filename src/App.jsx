@@ -1,6 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { useState, useEffect } from "react";
-import axios from "axios";
 import Home from "./pages/home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
@@ -17,24 +15,20 @@ import RincianMinuman from "./pages/RincianMinuman";
 
 export default function App() {
   const [token, setToken] = useLocalStorage("token", null);
-  const [data, setData] = useState(null);
-  const [isLoaded, setisLoaded] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-  const [query, setQuery] = useState("One Piece");
 
-  const [modalShow, setModalShow] = useState(false);
-  const [modalItem, setModalItem] = useState(null);
-
-
-const handleClick = (item) => {
-    setModalShow(!modalShow);
-    setModalItem(item);
-}
 
   return (
     <AuthContext.Provider value={{ token, setToken }}>
       <BrowserRouter>
         <Routes>
+          <Route
+            element={
+              <RequireAuth>
+                <Dashboard />
+              </RequireAuth>
+            }
+            path="/"
+          />
           <Route element={<Home />} path="/" />
           <Route element={<Login />} path="/login" />
           <Route

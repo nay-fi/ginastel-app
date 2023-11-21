@@ -18,16 +18,16 @@ const RincianMinuman = () => {
     <Container>
       <NavBar />
       <h1 className="my-4">Detail Minuman {drink.name}</h1>
-      <Card style={{ width: "24rem" }}>
+      <Card className="m-3 p-1" >
         <Link
           to={`/minuman`}
           style={{ textDecoration: "none", color: "inherit" }}
         >
           <Card.Img
+            className="w-50"
             variant="top"
             src={drink.image}
             alt={drink.name}
-            style={{ height: "200px", objectFit: "cover" }}
           />
         </Link>
         <Card.Body>

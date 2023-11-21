@@ -1,23 +1,28 @@
 // Minuman.jsx
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Accordion } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import NavBar from "../components/Navbar";
 import drinksData from "../drinks.json";
 
 const Minuman = () => {
   return (
-    <Container>
-      <NavBar />
+    <Container className="my-3">
       <h1 className="my-4">Daftar Minuman</h1>
-      <p>
+      <Accordion defaultActiveKey="0">
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Tentang Minuman&nbsp;<b>GiNaSTel</b> </Accordion.Header>
+        <Accordion.Body>
+        Dalam daftar minuman toko ini, Teh Ginastel hadir sebagai bintang utama dengan berbagai varian yang menggugah rasa untuk dicoba. Setiap tegukan Teh Ginastel membawa pengalaman rasa yang mendalam, dari kelembutan hingga kehangatan yang menyenangkan. Kombinasi antara kenikmatan teh yang khas dan berbagai varian uniknya menjadikan setiap minuman sebagai perjalanan rasa yang tak boleh dilewatkan. Dengan setiap sajian teh yang toko ini tawarkan, tamu dapat menemukan kepuasan yang mendalam dan keunikan cita rasa yang menjadi daya tarik utama dari daftar minuman ini
         Berikut adalah daftar makanan yang cocok untuk dihidangkan bersama
         dengan Makanan Ginastel
-      </p>
-      <Row xs={1} md={3} className="g-4">
+        </Accordion.Body>
+      </Accordion.Item>
+      </Accordion>
+      
+      <Row xs={1} md={3} className="g-2 justify-content-center">
         {drinksData.map((drink) => (
-          <Col key={drink.id}>
-            <Card style={{ width: "18rem", marginBottom: "20px" }}>
+          
+          <Col className="text-center" key={drink.id}>
+            <Card className="text-center m-3 p-1">
               <Link
                 to={`/rincian/${drink.id}`}
                 style={{ textDecoration: "none", color: "inherit" }}
@@ -26,7 +31,7 @@ const Minuman = () => {
                   variant="top"
                   src={drink.image}
                   alt={drink.name}
-                  style={{ height: "200px", objectFit: "cover" }}
+                  style={{ height: "100%", objectFit: "cover" }}
                 />
               </Link>
               <Card.Body>
@@ -35,6 +40,7 @@ const Minuman = () => {
               </Card.Body>
             </Card>
           </Col>
+
         ))}
       </Row>
     </Container>

@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
 import userData from "../users.json";
-import RequireAuth from "../components/RequireAuth";
 
 export default function Login() {
   const [email, setEmail] = useState([]);
@@ -39,12 +38,13 @@ export default function Login() {
 
   return (
     <Container className="my-5">
-      <h1 className="my-5">Login Your Account</h1>
+      <h1 className="my-5 text-center">Login Your Account</h1>
       <div className="m-auto">
       <Form>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Group className="mb-3 mx-2 me-5 me-lg-3 " controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control 
+          className=""
             type="email"
             placeholder="Masukin email"
             value={email}
@@ -57,7 +57,7 @@ export default function Login() {
           </Form.Text>
         </Form.Group>
 
-        <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Group className="mb-5 mx-2 me-5 me-lg-3" controlId="formBasicPassword">
           <Form.Label>Password</Form.Label>
           <Form.Control
             type="password"
@@ -68,7 +68,7 @@ export default function Login() {
             }} required
           /> 
         </Form.Group>
-        <Button variant="primary" onClick={login}>
+        <Button className="d-grid col-6 mx-auto" variant="primary" onClick={login}>
           Login
         </Button>
       </Form>
