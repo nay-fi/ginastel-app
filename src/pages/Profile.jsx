@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import NavBar from "../components/Navbar";
+import Row from "react-bootstrap/Row";
 import userData from "../users.json";
 
 
@@ -28,20 +29,17 @@ export default function Profile() {
       <NavBar />
       <h2 className="my-5">Profile Kelompok 13</h2>
       {userData.map((data) => (
-        <Row>
-          <Col xs={1}></Col>
-        <Col xs={5}>
-        <Card 
-        className="text-start"
-        style={{width: '100%'}}>
-        
-          <Card.Img className ="avatar-component" variant="top" src={data.image} />
+
+        <Card style={{width: '17rem'}} border="primary" >
+          <Row className="m-auto align-self-center">
+          <Card.Img className ="avatar-component" variant="top" class="rounded-circle" src={data.image} roundedCircle />
         <Card.Body>   
           <Card.Title>{data.name}</Card.Title>
           <Card.Text>Email : {data.email}</Card.Text>
           <Card.Text>NIM : {data.nim}</Card.Text>
           <Card.Text>Username : {data.username}</Card.Text>
         </Card.Body>
+        </Row>
       </Card>
       </Col>
       <Col xs={2}></Col>
