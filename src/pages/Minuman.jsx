@@ -31,7 +31,7 @@ const Minuman = () => {
               </Link>
               <Card.Body>
                 <Card.Title>{drink.name}</Card.Title>
-                <Card.Text>{drink.description}</Card.Text>
+                <Card.Text>{drink.price}</Card.Text>
               </Card.Body>
             </Card>
           </Col>
