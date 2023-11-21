@@ -33,7 +33,7 @@ export default function Dashboard(props) {
       <h1 className="my-5">Profile Kelompok 13</h1>
       {userData.map((data) => (
 
-        <Card style={{width: '17rem'}} border="primary" >
+        <Card className="m-auto align-self-center" style={{width: '17rem'}} border="primary" >
           <Row className="m-auto align-self-center">
           <Card.Img className ="avatar-component" variant="top" class="rounded-circle" src={data.image} roundedCircle />
         <Card.Body>   
